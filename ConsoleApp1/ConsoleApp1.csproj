@@ -47,10 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BookController.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Server\AuthAttribute.cs" />
     <Compile Include="Server\AuthenticationMiddleware.cs" />
     <Compile Include="Server\AwesomeWebServer.cs" />
     <Compile Include="Server\HttpAttribute.cs" />

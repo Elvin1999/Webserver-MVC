@@ -27,11 +27,9 @@ namespace ConsoleApp1.Controllers
         [HttpAttribute("GET")]
         public string All()
         {
-           
-
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.Append("<html><head></head><body>");
-            stringBuilder.Append("<ul>");
+            stringBuilder.Append("<ul style='width:50%;margin:auto;background-color:blue'>");
             foreach (var item in BookService.Books)
             {
                 stringBuilder.Append($"<li>{item.Author} = > {item.Name} </li>");
